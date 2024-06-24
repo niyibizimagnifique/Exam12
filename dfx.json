@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Exam12_backend": {
+      "main": "src/Exam12_backend/main.mo",
+      "type": "motoko"
+    },
+    "Exam12_frontend": {
+      "dependencies": [
+        "Exam12_backend"
+      ],
+      "source": [
+        "src/Exam12_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Exam12_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
